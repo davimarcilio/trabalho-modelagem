@@ -12,6 +12,7 @@ btnSignup.addEventListener("click", function () {
     body.className = "sign-up-js";
 });
 
-function login(params) {
-    window.location.href = `${pagename}/assets/pages/home.html`;
+function login(element) {
+  window.location.href = '/assets/home.html'
+    
 }
