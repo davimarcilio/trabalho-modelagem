@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    position: fixed;
+    background-color: #58af9b;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+
+}
+.left, h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+
+}
+.left span{
+    color: darkslategrey;
+}
+.sair-btn{
+    padding: 5px;
+    background: darkslategrey;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.7s;
+
+}
+.sair-btn:hover{
+    color: black;
+    background: #fff;
+    border: 2px solid;
+    border-color: black;
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background: darkslategrey;
+    transition: 0.7s;
+    transition-property: left;
+
+}
+.sidebar .img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+.sidebar h2{
+    color: #ccc;
+   
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.7s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background-color: #58af9b;
+    
+}
+.sidebar ion-icon{
+    padding-right: 10px;
+}
+label #sidebar-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: #fff;
+    font-size: 25px;
+    margin: 2.5px 0;
+    cursor: pointer;
+    transition: 0.7s;
+
+
+}
+label #sidebar-btn:hover{
+    color: gray;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+     font-size: 20px;
+     margin-left: 170px;
+     width: 80px;
+}
+.content{
+    background: url(/img/edificio-do-hospital-da-cidade_74855-6301.jpg) no-repeat;
+    background-size:cover ;
+    background-position: center;
+    height: 100vh;
+
+}
+.nao{
+    display: none;
+}
+
