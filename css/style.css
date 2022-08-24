@@ -9,3 +9,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.form {
+    box-sizing: border-box;
+}
+
+
+#container {
+    background-color: rgba(38, 38, 255, 0.801);
+}
